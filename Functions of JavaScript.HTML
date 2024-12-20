@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p>A function can access variables defined inside the function:</p>
+    <button type="button" onclick="myFunction()">Click me!</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+
+        var b = 5;
+        function myFunction() {
+            var a = 4;
+            document.getElementById("demo").innerHTMl = b * a;
+        }
+        document.getElementById("demo").innerHTMl = a;
+        document.getElementById("demo").innerHTMl = b;
+
+    </script>
+</body>
+<head>
+    <title>Functions</title>
+</head>
+
+<body>
+    <button onclick="myfunction(5)">Execute JS function</button>
+
+    <script>
+        function myfunction(x, y) {
+            if (y === undefined) {
+                y = 2;
+            }
+            document.write(x * y);
+        }
+    </script>
+</body>
+<body>
+    <p> Setting a default value to a function parameter.</p>
+    <p id="demo"></p>
+    <script>
+        function myFuntion(x, y) {
+            if (y === undefined) {
+                y = 2;
+            }
+            return x * y;
+        }
+        document.getElementById("demo").innerHtml = myFunction(5)
+    </script>
+</body>
+
+</html>
