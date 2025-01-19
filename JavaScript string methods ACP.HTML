@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScrpit String Methods</h2>
+
+    <p> Search a string for "doing", display the postion of the match and replace the word "how are" with "how are you"
+        and display </p>
+
+    <p id="search_result"></p>
+    <p id="replace_result"></p>
+    <p id="string_result"></p>
+
+    <script>
+        var str = "hello how are doing for the day";
+        var search_position = str.search("doing");
+        var txt = str.replace("how are", "how are you")
+        var x = 70;
+        var y = 90;
+        document.getElementById("search_result").innerHTML = search_position;
+        document.getElementById("replace_result").innerHTML = txt;
+
+        document.getElementById("string_result").innerHTML = String(x) + String(y);
+    </script>
+</body>
+
+<body>
+
+    <h2>JavaScrpit Error Handling</h2>
+
+    <p>This example demonstrates how to use <b>catch</b> to display an error.</p>
+
+    <p id="error_message"></p>
+
+    <script>
+        try {
+            addalert("Welcome guest!");
+        }
+        catch (err) {
+            document.getElementById("error_message").innerHTML = err.message;
+        }
+    </script>
+</body>
+
+<body>
+    <h2>JavaScrpit Arrow Function with a parameter.</h2>
+    <p>This example shows an Arrow Function with a paameter.</p>
+    <p id="result"></p>
+    <script>
+
+        add = (a, b) => a + b;
+        document.getElementById("result").innerHTML = add(4, 6);
+    </script>
+</body>
+
+</html>
